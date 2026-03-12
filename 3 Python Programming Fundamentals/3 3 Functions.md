@@ -11,8 +11,8 @@ There are two types of functions :
 
 A **built-in function** is a function that is globally available in Python without requiring an import or a specific context. These functions are defined at the core level of Python or provided by the standard library. Some examples we already used are: `print()`, `len()`, `sum()`, `range()`, `slice()`, `sorted()`…
 
-- [Link to python built-in functions (w3schools)](https://www.w3schools.com/python/python_ref_functions.asp)
-- [Cheat sheet](3%203%20Functions.md)
+- [Link to python built-in functions (w3schools)](../img/https://www.w3schools.com/python/python_ref_functions.asp)
+- [Cheat sheet](../img/3%203%20Functions.md)
 
 > Not to be mistaken with methods, which are associated with a specific object (or class) and operate in the context of the object it belongs to and may use or modify the object's internal data. Examples:
 > 
@@ -47,7 +47,7 @@ def add(a):
     return(b)
 ```
 
-![Captura de pantalla 2024-12-12 a las 15.46.43.png](Captura_de_pantalla_2024-12-12_a_las_15.46.43.png)
+![Captura de pantalla 2024-12-12 a las 15.46.43.png](../img/Captura_de_pantalla_2024-12-12_a_las_15.46.43.png)
 
 ```python
 # Define a function with multiple parameters
@@ -251,4 +251,4 @@ Note how the changes made to the list are not limited to the functions scope. Th
 
 ## Cheat Sheats
 
-[05_CheatSheet_BuiltInFunctionsAndMethods.pdf](Python/Glossary%20&%20cheatsheets/05_CheatSheet_BuiltInFunctions.pdf)
+[05_CheatSheet_BuiltInFunctionsAndMethods.pdf](../img/Python/Glossary%20&%20cheatsheets/05_CheatSheet_BuiltInFunctions.pdf)

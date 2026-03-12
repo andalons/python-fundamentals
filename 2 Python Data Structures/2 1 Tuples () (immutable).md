@@ -25,7 +25,7 @@ RatingsSorted = **sorted**(Ratings)
 
 - Tupes are **immutable:**
     
-    ![Each variable does not contain a tuple, but references the same immutable tuple object. ](Captura_de_pantalla_2024-12-11_a_las_8.19.34.png)
+    ![Each variable does not contain a tuple, but references the same immutable tuple object. ](../img/Captura_de_pantalla_2024-12-11_a_las_8.19.34.png)
     
     Each variable does not contain a tuple, but references the same immutable tuple object. 
     
@@ -44,6 +44,6 @@ RatingsSorted = **sorted**(Ratings)
     
     We can access these elements using the standard indexing methods
     
-    ![Captura de pantalla 2024-12-11 a las 8.31.14.png](Captura_de_pantalla_2024-12-11_a_las_8.31.14.png)
+    ![Captura de pantalla 2024-12-11 a las 8.31.14.png](../img/Captura_de_pantalla_2024-12-11_a_las_8.31.14.png)
     
 - **Usage**: Often used to represent fixed collections of items (e.g., coordinates, records).

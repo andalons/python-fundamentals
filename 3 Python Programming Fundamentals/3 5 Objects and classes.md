@@ -25,15 +25,15 @@ You interact with objects by calling their methods or accessing their attributes
 
 The first step in creating a class is giving it a name. We will create two classes: Circle and Rectangle. Each has their attributes, which are variables. The class Circle has the attribute radius and color, while the Rectangle class has the attribute height and width.
 
-![](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%203/images/ClassesClass.png)
+![](../img/https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%203/images/ClassesClass.png)
 
 The first step in creating your own class is to use the `class` keyword, then the name of the class. In this course the class parent will always be object:
 
-![Captura de pantalla 2024-12-14 a las 10.31.31.png](Captura_de_pantalla_2024-12-14_a_las_10.31.31.png)
+![Captura de pantalla 2024-12-14 a las 10.31.31.png](../img/Captura_de_pantalla_2024-12-14_a_las_10.31.31.png)
 
 The next step is a special method called a constructor `__init__`, which is used to initialize the object. The inputs are data attributes. The term `self` contains all the attributes in the set. For example the `self.color` gives the value of the attribute color and `self.radius` will give you the radius of the object. We also have the method `add_radius()` with the parameter `r`, the method adds the value of `r` to the attribute radius. To access the radius we use the syntax `self.radius`. The labeled syntax is summarized in Figure 5:
 
-![Captura de pantalla 2024-12-14 a las 10.32.48.png](Captura_de_pantalla_2024-12-14_a_las_10.32.48.png)
+![Captura de pantalla 2024-12-14 a las 10.32.48.png](../img/Captura_de_pantalla_2024-12-14_a_las_10.32.48.png)
 
 ```python
 # Import library to draw circle
@@ -63,7 +63,7 @@ class Circle(object):
 
 An instance of an object is the realisation of a class.
 
-![*Three instances of the class Circle, or three objects of type Circle. The colour attribute for the red Circle is the colour red, for the green Circle object the colour attribute is green, and for the yellow Circle the colour attribute is yellow.*](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%203/images/ClassesObj.png)
+![*Three instances of the class Circle, or three objects of type Circle. The colour attribute for the red Circle is the colour red, for the green Circle object the colour attribute is green, and for the yellow Circle the colour attribute is yellow.*](../img/https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%203/images/ClassesObj.png)
 
 *Three instances of the class Circle, or three objects of type Circle. The colour attribute for the red Circle is the colour red, for the green Circle object the colour attribute is green, and for the yellow Circle the colour attribute is yellow.*
 

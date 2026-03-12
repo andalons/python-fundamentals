@@ -46,7 +46,7 @@ import pandas
 # DataFrame...
 ```
 
-![Captura de pantalla 2024-12-16 a las 11.40.22.png](Captura_de_pantalla_2024-12-16_a_las_11.40.22.png)
+![Captura de pantalla 2024-12-16 a las 11.40.22.png](../img/Captura_de_pantalla_2024-12-16_a_las_11.40.22.png)
 
 ```python
 import pandas as pd
@@ -139,7 +139,7 @@ x = {'Name': ['Rose','John', 'Jane', 'Mary'], 'ID': [1, 2, 3, 4], 'Department': 
 df = pd.DataFrame(x)
 ```
 
-![Captura de pantalla 2024-12-16 a las 8.10.24.png](Captura_de_pantalla_2024-12-16_a_las_8.10.24.png)
+![Captura de pantalla 2024-12-16 a las 8.10.24.png](../img/Captura_de_pantalla_2024-12-16_a_las_8.10.24.png)
 
 ### Column selection
 
@@ -160,11 +160,11 @@ x = df['Name']
 x
 ```
 
-![Captura de pantalla 2024-12-16 a las 8.13.28.png](Captura_de_pantalla_2024-12-16_a_las_8.13.28.png)
+![Captura de pantalla 2024-12-16 a las 8.13.28.png](../img/Captura_de_pantalla_2024-12-16_a_las_8.13.28.png)
 
-![Captura de pantalla 2024-12-16 a las 8.15.25.png](Captura_de_pantalla_2024-12-16_a_las_8.15.25.png)
+![Captura de pantalla 2024-12-16 a las 8.15.25.png](../img/Captura_de_pantalla_2024-12-16_a_las_8.15.25.png)
 
-![Captura de pantalla 2024-12-16 a las 8.25.47.png](Captura_de_pantalla_2024-12-16_a_las_8.25.47.png)
+![Captura de pantalla 2024-12-16 a las 8.25.47.png](../img/Captura_de_pantalla_2024-12-16_a_las_8.25.47.png)
 
 ### **DataFrame Attributes**
 
@@ -295,7 +295,7 @@ To slice out a set of rows, you use this syntax: `data[start:stop]` where start 
 > **NOTE**: When slicing in pandas, the start bound is included in the output. So if you want to select rows 0, 1, and 2 your code would look like this: `df.iloc[0:3]`. With `loc()`, both the start bound and the stop bound are inclusive. When using `loc()`, integers can be used, but the integers refer to the index label and not the position. Using `loc()` and select 1:4 will get a different result than using `iloc()` to select rows 1:4.
 > 
 
-![Captura de pantalla 2024-12-16 a las 9.10.41.png](Captura_de_pantalla_2024-12-16_a_las_9.10.41.png)
+![Captura de pantalla 2024-12-16 a las 9.10.41.png](../img/Captura_de_pantalla_2024-12-16_a_las_9.10.41.png)
 
 ```python
 # 1. slicing using old dataframe df
@@ -308,14 +308,14 @@ df.**loc**[0:2,'ID':'Department']
 df2.**loc**['Rose':'Jane', 'ID':'Department']
 ```
 
-![Output 1.](Captura_de_pantalla_2024-12-16_a_las_9.15.41.png)
+![Output 1.](../img/Captura_de_pantalla_2024-12-16_a_las_9.15.41.png)
 
 Output 1.
 
-![Output 2.](Captura_de_pantalla_2024-12-16_a_las_9.15.50.png)
+![Output 2.](../img/Captura_de_pantalla_2024-12-16_a_las_9.15.50.png)
 
 Output 2.
 
-![Output 3.](Captura_de_pantalla_2024-12-16_a_las_9.16.11.png)
+![Output 3.](../img/Captura_de_pantalla_2024-12-16_a_las_9.16.11.png)
 
 Output 3.

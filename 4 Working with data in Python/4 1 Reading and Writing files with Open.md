@@ -9,7 +9,7 @@ One way to read or write a file in Python is to use the built-in `open` functi
 1. **File path**: The file path parameter consists of the filename and directory where the file is located.
 2. **Mode**: The mode parameter specifies the purpose of opening the file, such as 'r' for reading, 'w' for writing, or 'a' for appending.
     
-    ![Captura de pantalla 2024-12-14 a las 16.54.44.png](Captura_de_pantalla_2024-12-14_a_las_16.54.44.png)
+    ![Captura de pantalla 2024-12-14 a las 16.54.44.png](../img/Captura_de_pantalla_2024-12-14_a_las_16.54.44.png)
     
 
 > **Note**: we will only cover **.txt** files.
@@ -106,7 +106,7 @@ with open(example1, "r") as file1:
     print(file1.read(15))
 ```
 
-![Captura de pantalla 2024-12-14 a las 17.13.46.png](Captura_de_pantalla_2024-12-14_a_las_17.13.46.png)
+![Captura de pantalla 2024-12-14 a las 17.13.46.png](../img/Captura_de_pantalla_2024-12-14_a_las_17.13.46.png)
 
 > **Navigate to the intended position (Optional)**
 If you want to read characters from a specific position in the file, you can use the seek() method. This method moves the file pointer (like a cursor) to a particular position. The position is specified in bytes, so you'll need to know the byte offset of the characters you want to read.
@@ -178,7 +178,7 @@ with open(exmp2, 'w') as writefile:
 
 The method `.write()` works similar to the method `.readline()`, except instead of reading a new line it writes a new line. The process is illustrated in the figure. The different colour coding of the grid represents a new line added to the file after each method call.
 
-![Captura de pantalla 2024-12-14 a las 17.34.05.png](Captura_de_pantalla_2024-12-14_a_las_17.34.05.png)
+![Captura de pantalla 2024-12-14 a las 17.34.05.png](../img/Captura_de_pantalla_2024-12-14_a_las_17.34.05.png)
 
 ```python
 # We write a list to a .txt file as follows:

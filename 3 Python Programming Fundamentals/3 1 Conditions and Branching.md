@@ -30,7 +30,7 @@ i != 6 #output: True
 
 The inequality operation is also used to compare the letters/words/symbols according to the ASCII value of letters. The decimal value shown in the following table represents the order of the character:
 
-![Captura de pantalla 2024-12-12 a las 10.57.46.png](Captura_de_pantalla_2024-12-12_a_las_10.57.46.png)
+![Captura de pantalla 2024-12-12 a las 10.57.46.png](../img/Captura_de_pantalla_2024-12-12_a_las_10.57.46.png)
 
 For example, the ASCII code for **!** is 33, while the ASCII code for **+** is 43. Therefore **+** is larger than **!** as 43 is greater than 33.
 

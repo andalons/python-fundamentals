@@ -2,7 +2,7 @@
 
 - A set is a unique collection of objects in Python. You can denote a set with a pair of curly brackets **{}**. Python will automatically remove duplicate items:
     
-    ![This figure illustrates the process of mapping.](Captura_de_pantalla_2024-12-12_a_las_8.48.23.png)
+    ![This figure illustrates the process of mapping.](../img/Captura_de_pantalla_2024-12-12_a_las_8.48.23.png)
     
     This figure illustrates the process of mapping.
     
@@ -31,19 +31,19 @@ A.**remove**("NSYNC") #output: {'AC/DC', 'Back in Black', 'Thriller'}
 - With sets you can check the difference between sets, as well as the symmetric **difference**, **intersection**, and **union**:
     
     
-    ![Difference](Captura_de_pantalla_2024-12-12_a_las_9.04.23.png)
+    ![Difference](../img/Captura_de_pantalla_2024-12-12_a_las_9.04.23.png)
     
     Difference
     
-    ![Intersection](Captura_de_pantalla_2024-12-12_a_las_9.08.55.png)
+    ![Intersection](../img/Captura_de_pantalla_2024-12-12_a_las_9.08.55.png)
     
     Intersection
     
-    ![Difference](Captura_de_pantalla_2024-12-12_a_las_9.04.36.png)
+    ![Difference](../img/Captura_de_pantalla_2024-12-12_a_las_9.04.36.png)
     
     Difference
     
-    ![Union](Captura_de_pantalla_2024-12-12_a_las_9.09.55.png)
+    ![Union](../img/Captura_de_pantalla_2024-12-12_a_las_9.09.55.png)
     
     Union
     
