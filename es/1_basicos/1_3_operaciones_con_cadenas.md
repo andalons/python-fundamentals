@@ -11,8 +11,6 @@ Es útil pensar en una cadena como una secuencia ordenada de caracteres. Cada el
 - **Concatenación:** Combina cadenas usando el operador `+`.
     
     ```python
-    python
-    Copiar código
     str1 = "Hello"
     str2 = "World"
     result = str1 + " " + str2  # Output: "Hello World"

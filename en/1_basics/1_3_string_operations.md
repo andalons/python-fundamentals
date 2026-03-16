@@ -11,8 +11,6 @@ It is helpful to think of a string as an ordered sequence of characters. Each el
 - **Concatenation:** Combine strings using the `+` operator.
     
     ```python
-    python
-    Copiar código
     str1 = "Hello"
     str2 = "World"
     result = str1 + " " + str2  # Output: "Hello World"
