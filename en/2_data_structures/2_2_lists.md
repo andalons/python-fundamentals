@@ -39,13 +39,13 @@ L.**append**(["pop", 7]) #output L: ["Andrea", 7.2, 1992, "music", 10, ["pop", 7
 
 - **Aliasing**: multiple names referring to the same object is known as aliasing. When we set one variable **B** equal to **A**, both **A** and **B** are referencing the same list in memory:
     
-    ![A and B are referencing the same list, therefore if we change A, list B also changes.](../img/Captura_de_pantalla_2024-12-11_a_las_9.12.46.png)
+    ![A and B are referencing the same list, therefore if we change A, list B also changes.](../../img/Captura_de_pantalla_2024-12-11_a_las_9.12.46.png)
     
     A and B are referencing the same list, therefore if we change A, list B also changes.
     
 - **Cloning**: Syntax `B = A[:]`
     
-    ![Variable A references one list. Variable B references a new copy or clone of the original list. Now if you change A, B will not change. ](../img/Captura_de_pantalla_2024-12-11_a_las_9.14.28.png)
+    ![Variable A references one list. Variable B references a new copy or clone of the original list. Now if you change A, B will not change. ](../../img/Captura_de_pantalla_2024-12-11_a_las_9.14.28.png)
     
     Variable A references one list. Variable B references a new copy or clone of the original list. Now if you change A, B will not change. 
     

@@ -25,7 +25,7 @@ a = np.array([0, 1, 2, 3, 4])
 a #output: array([0, 1, 2, 3, 4])
 ```
 
-![Each element is of the same type (in this case integers)](../img/Captura_de_pantalla_2024-12-17_a_las_16.14.09.png)
+![Each element is of the same type (in this case integers)](../../img/Captura_de_pantalla_2024-12-17_a_las_16.14.09.png)
 
 Each element is of the same type (in this case integers)
 
@@ -170,7 +170,7 @@ def Plotvec1(u, z, v):
 Plotvec1(u, z, v)
 ```
 
-![Captura de pantalla 2024-12-17 a las 16.47.21.png](../img/Captura_de_pantalla_2024-12-17_a_las_16.47.21.png)
+![Captura de pantalla 2024-12-17 a las 16.47.21.png](../../img/Captura_de_pantalla_2024-12-17_a_las_16.47.21.png)
 
 ```python
 **# Array subtraction**
@@ -208,7 +208,7 @@ np.dot(X,Y) #output: 7
 
 The **dot product** is a mathematical operation that takes two vectors of the same size and returns a single scalar (number):
 
-![Captura de pantalla 2024-12-17 a las 16.57.43.png](../img/Captura_de_pantalla_2024-12-17_a_las_16.57.43.png)
+![Captura de pantalla 2024-12-17 a las 16.57.43.png](../../img/Captura_de_pantalla_2024-12-17_a_las_16.57.43.png)
 
 ```python
 # **Adding a constant**: 
@@ -235,7 +235,7 @@ We can apply the function `sin` to the array `x` and assign the values to th
 y = np.sin(x)
 ```
 
-![Captura de pantalla 2024-12-17 a las 17.08.17.png](../img/Captura_de_pantalla_2024-12-17_a_las_17.08.17.png)
+![Captura de pantalla 2024-12-17 a las 17.08.17.png](../../img/Captura_de_pantalla_2024-12-17_a_las_17.08.17.png)
 
 The sine function is a trigonometric function that works on angles (in radians) and produces values between -1 and 1.
 
@@ -267,7 +267,7 @@ y = np.sin(x)
 plt.plot(x, y)
 ```
 
-![Captura de pantalla 2024-12-17 a las 17.16.18.png](../img/Captura_de_pantalla_2024-12-17_a_las_17.16.18.png)
+![Captura de pantalla 2024-12-17 a las 17.16.18.png](../../img/Captura_de_pantalla_2024-12-17_a_las_17.16.18.png)
 
 ### Iterating 1D arrays
 
@@ -304,9 +304,9 @@ A.size  #output: 9
 
 ### Accessing different elements of a 2D numpy array:
 
-![Captura de pantalla 2024-12-18 a las 7.42.19.png](../img/Captura_de_pantalla_2024-12-18_a_las_7.42.19.png)
+![Captura de pantalla 2024-12-18 a las 7.42.19.png](../../img/Captura_de_pantalla_2024-12-18_a_las_7.42.19.png)
 
-![Captura de pantalla 2024-12-18 a las 7.42.31.png](../img/Captura_de_pantalla_2024-12-18_a_las_7.42.31.png)
+![Captura de pantalla 2024-12-18 a las 7.42.31.png](../../img/Captura_de_pantalla_2024-12-18_a_las_7.42.31.png)
 
 ```python
 # We use the square brackets and the indices corresponding to the element we would like:
@@ -320,9 +320,9 @@ A[1][2]
 
 ### Slicing in a 2D numpy array:
 
-![Captura de pantalla 2024-12-18 a las 7.46.14.png](../img/Captura_de_pantalla_2024-12-18_a_las_7.46.14.png)
+![Captura de pantalla 2024-12-18 a las 7.46.14.png](../../img/Captura_de_pantalla_2024-12-18_a_las_7.46.14.png)
 
-![Captura de pantalla 2024-12-18 a las 7.46.26.png](../img/Captura_de_pantalla_2024-12-18_a_las_7.46.26.png)
+![Captura de pantalla 2024-12-18 a las 7.46.26.png](../../img/Captura_de_pantalla_2024-12-18_a_las_7.46.26.png)
 
 ```python
 # Access the element on the first row and first and second columns
@@ -333,23 +333,23 @@ A[0:2, 2] #output: array([13, 23])
 
 ### Basic operations
 
-![Adding](../img/Captura_de_pantalla_2024-12-18_a_las_7.48.02.png)
+![Adding](../../img/Captura_de_pantalla_2024-12-18_a_las_7.48.02.png)
 
 Adding
 
-![Multiplying by a scalar](../img/Captura_de_pantalla_2024-12-18_a_las_7.50.02.png)
+![Multiplying by a scalar](../../img/Captura_de_pantalla_2024-12-18_a_las_7.50.02.png)
 
 Multiplying by a scalar
 
-![Multiplication of two arrays corresponds to an element-wise product or ***Hadamard product***. Consider matrix `X` and `Y`. The Hadamard product corresponds to multiplying each of the elements in the same position, i.e. multiplying elements contained in the same color boxes together. The result is a new matrix that is the same size as matrix `Y` or `X`, as shown in the following figure](../img/Captura_de_pantalla_2024-12-18_a_las_7.50.33.png)
+![Multiplication of two arrays corresponds to an element-wise product or ***Hadamard product***. Consider matrix `X` and `Y`. The Hadamard product corresponds to multiplying each of the elements in the same position, i.e. multiplying elements contained in the same color boxes together. The result is a new matrix that is the same size as matrix `Y` or `X`, as shown in the following figure](../../img/Captura_de_pantalla_2024-12-18_a_las_7.50.33.png)
 
 Multiplication of two arrays corresponds to an element-wise product or ***Hadamard product***. Consider matrix `X` and `Y`. The Hadamard product corresponds to multiplying each of the elements in the same position, i.e. multiplying elements contained in the same color boxes together. The result is a new matrix that is the same size as matrix `Y` or `X`, as shown in the following figure
 
 We can also perform **matrix multiplication** with the numpy arrays `A` and `B` as follows:
 
-![Captura de pantalla 2024-12-18 a las 7.56.32.png](../img/Captura_de_pantalla_2024-12-18_a_las_7.56.32.png)
+![Captura de pantalla 2024-12-18 a las 7.56.32.png](../../img/Captura_de_pantalla_2024-12-18_a_las_7.56.32.png)
 
-![Captura de pantalla 2024-12-18 a las 7.57.19.png](../img/Captura_de_pantalla_2024-12-18_a_las_7.57.19.png)
+![Captura de pantalla 2024-12-18 a las 7.57.19.png](../../img/Captura_de_pantalla_2024-12-18_a_las_7.57.19.png)
 
 ```python
 # Create a matrix A
@@ -384,8 +384,8 @@ C.T # Output:
 
 ### Matrix mathematics:
 
-[06_Matrix_Mathematics.pdf](../img/06_Matrix_Mathematics.pdf)
+[06_Matrix_Mathematics.pdf](../../img/06_Matrix_Mathematics.pdf)
 
 ## Cheat Sheets:
 
-![Captura de pantalla 2024-12-18 a las 8.10.01.png](../img/Captura_de_pantalla_2024-12-18_a_las_8.10.01.png)
+![Captura de pantalla 2024-12-18 a las 8.10.01.png](../../img/Captura_de_pantalla_2024-12-18_a_las_8.10.01.png)

@@ -1,8 +1,8 @@
 # 1.3 String Operations
 
-![Captura de pantalla 2024-12-10 a las 16.16.45.png](../img/Captura_de_pantalla_2024-12-10_a_las_16.16.45.png)
+![Captura de pantalla 2024-12-10 a las 16.16.45.png](../../img/Captura_de_pantalla_2024-12-10_a_las_16.16.45.png)
 
-![Captura de pantalla 2024-12-10 a las 16.17.59.png](../img/Captura_de_pantalla_2024-12-10_a_las_16.17.59.png)
+![Captura de pantalla 2024-12-10 a las 16.17.59.png](../../img/Captura_de_pantalla_2024-12-10_a_las_16.17.59.png)
 
 It is helpful to think of a string as an ordered sequence of characters. Each element of the sequence can be accessed by the index represented by the array of numbers. Negative indexing can also be used (picture 2).
 
@@ -47,11 +47,11 @@ It is helpful to think of a string as an ordered sequence of characters. Each el
     substring = word[1:4]  # Output: 'yth'
     ```
     
-    ![We can input a stride value as follows: The 2 indicates we'd select every second variable. ](../img/Captura_de_pantalla_2024-12-10_a_las_16.26.51.png)
+    ![We can input a stride value as follows: The 2 indicates we'd select every second variable. ](../../img/Captura_de_pantalla_2024-12-10_a_las_16.26.51.png)
     
     We can input a stride value as follows: The 2 indicates we'd select every second variable. 
     
-    ![Here an example which also incorporates slicing](../img/Captura_de_pantalla_2024-12-10_a_las_16.27.13.png)
+    ![Here an example which also incorporates slicing](../../img/Captura_de_pantalla_2024-12-10_a_las_16.27.13.png)
     
     Here an example which also incorporates slicing
     
@@ -274,7 +274,7 @@ The search() function searches for specified patterns within a string. Here is a
 
 Regular expressions (RegEx) are patterns used to match and manipulate strings of text. There are several special sequences in RegEx that can be used to match specific characters or patterns.
 
-![Captura de pantalla 2024-12-10 a las 16.58.56.png](../img/Captura_de_pantalla_2024-12-10_a_las_16.58.56.png)
+![Captura de pantalla 2024-12-10 a las 16.58.56.png](../../img/Captura_de_pantalla_2024-12-10_a_las_16.58.56.png)
 
 Examples of regular expressions and RegEx functions
 

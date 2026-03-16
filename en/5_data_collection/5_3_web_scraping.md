@@ -23,7 +23,7 @@ In many cases, scripts or programs automate web scraping. These automation tools
 
 ## HTML structure
 
-![Captura de pantalla 2024-12-19 a las 15.49.59.png](../img/Captura_de_pantalla_2024-12-19_a_las_15.49.59.png)
+![Captura de pantalla 2024-12-19 a las 15.49.59.png](../../img/Captura_de_pantalla_2024-12-19_a_las_15.49.59.png)
 
 Hypertext markup language (HTML) serves as the foundation of web pages. Understanding its structure is crucial for web scraping.
 
@@ -49,7 +49,7 @@ You can visualize HTML documents as trees with tags as nodes.
 - Tags within the same parent tag are considered siblings.
 - For example, the `<html>` tag contains both `<head>` and `<body>` tags, making them descendants of `<html` but children of `<html>`. `<head>` and `<body>` are siblings.
 
-![Captura de pantalla 2024-12-19 a las 15.50.27.png](../img/Captura_de_pantalla_2024-12-19_a_las_15.50.27.png)
+![Captura de pantalla 2024-12-19 a las 15.50.27.png](../../img/Captura_de_pantalla_2024-12-19_a_las_15.50.27.png)
 
 ### HTML tables
 
@@ -60,7 +60,7 @@ HTML tables are essential for presenting structured data.
 - The first row often uses the table header tag, typically `<th>`.
 - The table cell is represented by `<td>` tags, defining individual cells in a row.
 
-![Captura de pantalla 2024-12-19 a las 15.51.11.png](../img/Captura_de_pantalla_2024-12-19_a_las_15.51.11.png)
+![Captura de pantalla 2024-12-19 a las 15.51.11.png](../../img/Captura_de_pantalla_2024-12-19_a_las_15.51.11.png)
 
 ## Web Scraping Tables using Pandas
 
@@ -87,9 +87,9 @@ df = tables[0]print(df)
 
 This will extract the required table as a dataframe `df`. The output of the print statement would look as shown below.
 
-![Captura de pantalla 2024-12-20 a las 7.49.22.png](../img/Captura_de_pantalla_2024-12-20_a_las_7.49.22.png)
+![Captura de pantalla 2024-12-20 a las 7.49.22.png](../../img/Captura_de_pantalla_2024-12-20_a_las_7.49.22.png)
 
-![A snapshot of the webpage](../img/Captura_de_pantalla_2024-12-20_a_las_7.46.30.png)
+![A snapshot of the webpage](../../img/Captura_de_pantalla_2024-12-20_a_las_7.46.30.png)
 
 A snapshot of the webpage
 
@@ -101,9 +101,9 @@ Firstly, web pages may have content saved in them as tables but they may not app
 
 The images on the web page are also saved in tabular format:
 
-![Captura de pantalla 2024-12-20 a las 7.51.10.png](../img/Captura_de_pantalla_2024-12-20_a_las_7.51.10.png)
+![Captura de pantalla 2024-12-20 a las 7.51.10.png](../../img/Captura_de_pantalla_2024-12-20_a_las_7.51.10.png)
 
-![A closer look at table 3 in the image shown above indicates that there are many hyperlink texts which are also going to be treated as information by the pandas function.](../img/Captura_de_pantalla_2024-12-20_a_las_7.52.14.png)
+![A closer look at table 3 in the image shown above indicates that there are many hyperlink texts which are also going to be treated as information by the pandas function.](../../img/Captura_de_pantalla_2024-12-20_a_las_7.52.14.png)
 
 A closer look at table 3 in the image shown above indicates that there are many hyperlink texts which are also going to be treated as information by the pandas function.
 
@@ -121,7 +121,7 @@ print(df)
 
 The output of the print statement is shown below.
 
-![Note that the hyperlink texts have also been retained in the code output.](../img/Captura_de_pantalla_2024-12-20_a_las_7.53.31.png)
+![Note that the hyperlink texts have also been retained in the code output.](../../img/Captura_de_pantalla_2024-12-20_a_las_7.53.31.png)
 
 Note that the hyperlink texts have also been retained in the code output.
 
@@ -353,7 +353,7 @@ The `find_all()` method looks through a tag’s descendants and retrieves all 
     table_rows 
     ```
     
-    ![Captura de pantalla 2024-12-20 a las 10.05.13.png](../img/Captura_de_pantalla_2024-12-20_a_las_10.05.13.png)
+    ![Captura de pantalla 2024-12-20 a las 10.05.13.png](../../img/Captura_de_pantalla_2024-12-20_a_las_10.05.13.png)
     
     ```python
     first_row =table_rows[0]
@@ -373,7 +373,7 @@ The `find_all()` method looks through a tag’s descendants and retrieves all 
         print("row",i,"is",row)
     ```
     
-    ![Captura de pantalla 2024-12-20 a las 10.07.45.png](../img/Captura_de_pantalla_2024-12-20_a_las_10.07.45.png)
+    ![Captura de pantalla 2024-12-20 a las 10.07.45.png](../../img/Captura_de_pantalla_2024-12-20_a_las_10.07.45.png)
     
     As `row` is a `cell` object, we can apply the method `find_all` to it and extract table cells in the object `cells` using the tag `td`, this is all the children with the name `td`. The result is a list, each element corresponds to a cell and is a `Tag` object, we can iterate through this list as well. We can extract the content using the `string` attribute.
     
@@ -385,7 +385,7 @@ The `find_all()` method looks through a tag’s descendants and retrieves all 
             print('colunm',j,"cell",cell)
     ```
     
-    ![Captura de pantalla 2024-12-20 a las 10.08.41.png](../img/Captura_de_pantalla_2024-12-20_a_las_10.08.41.png)
+    ![Captura de pantalla 2024-12-20 a las 10.08.41.png](../../img/Captura_de_pantalla_2024-12-20_a_las_10.08.41.png)
     
     If we use a list we can match against any item in that list.
     
@@ -394,7 +394,7 @@ The `find_all()` method looks through a tag’s descendants and retrieves all 
     list_input
     ```
     
-    ![Captura de pantalla 2024-12-20 a las 10.10.33.png](../img/Captura_de_pantalla_2024-12-20_a_las_10.10.33.png)
+    ![Captura de pantalla 2024-12-20 a las 10.10.33.png](../../img/Captura_de_pantalla_2024-12-20_a_las_10.10.33.png)
     
 - **`attrs`**
     
@@ -463,7 +463,7 @@ soup **=** BeautifulSoup(data,"html5lib")  *# create a soup object using the var
 print(link.get('href'))
 ```
 
-![Captura de pantalla 2024-12-20 a las 10.33.16.png](../img/Captura_de_pantalla_2024-12-20_a_las_10.33.16.png)
+![Captura de pantalla 2024-12-20 a las 10.33.16.png](../../img/Captura_de_pantalla_2024-12-20_a_las_10.33.16.png)
 
 **Scrape all images Tags:**
 
@@ -504,4 +504,4 @@ color_code = cols[3].string # store the value in column 4 as color_code
 print("{}--->{}".format(color_name,color_code))
 ```
 
-![Captura de pantalla 2024-12-20 a las 10.37.03.png](../img/Captura_de_pantalla_2024-12-20_a_las_10.37.03.png)
+![Captura de pantalla 2024-12-20 a las 10.37.03.png](../../img/Captura_de_pantalla_2024-12-20_a_las_10.37.03.png)

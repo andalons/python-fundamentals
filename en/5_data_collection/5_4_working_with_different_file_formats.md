@@ -46,7 +46,7 @@ df = pd.read_csv("addresses.csv", header=None)
 df # Output:
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.13.42.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.13.42.png)
+![Captura de pantalla 2024-12-20 a las 12.13.42.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.13.42.png)
 
 ```python
 # Adding column name to the DataFrame
@@ -55,7 +55,7 @@ df.columns =['First Name', 'Last Name', 'Location ', 'City','State','Area Code']
 df # Output:
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.15.03.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.15.03.png)
+![Captura de pantalla 2024-12-20 a las 12.15.03.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.15.03.png)
 
 ```python
 # Selecting a single column
@@ -64,7 +64,7 @@ df["First Name"]
 df # Output:
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.15.58.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.15.58.png)
+![Captura de pantalla 2024-12-20 a las 12.15.58.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.15.58.png)
 
 ```python
 # Selecting multiple columns
@@ -73,7 +73,7 @@ df = df[['First Name', 'Last Name', 'Location ', 'City','State','Area Code']]
 df # Output:
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.16.41.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.16.41.png)
+![Captura de pantalla 2024-12-20 a las 12.16.41.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.16.41.png)
 
 ### **Selecting rows using .iloc and .loc**
 
@@ -116,11 +116,11 @@ df
 result = df.transform(func = ['sqrt'])
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.27.21.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.27.21.png)
+![Captura de pantalla 2024-12-20 a las 12.27.21.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.27.21.png)
 
-![Captura de pantalla 2024-12-20 a las 12.27.28.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.27.28.png)
+![Captura de pantalla 2024-12-20 a las 12.27.28.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.27.28.png)
 
-![Captura de pantalla 2024-12-20 a las 12.27.42.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.27.42.png)
+![Captura de pantalla 2024-12-20 a las 12.27.42.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.27.42.png)
 
 ## JSON file format
 
@@ -192,7 +192,7 @@ with open("sample.json", "w") as outfile:
 print(json_object)
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.47.29.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.47.29.png)
+![Captura de pantalla 2024-12-20 a las 12.47.29.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.47.29.png)
 
 ### Deserialization: Reading JSON to a File
 
@@ -246,7 +246,7 @@ df = pd.read_excel("file_example_XLSX_10.xlsx")
 df #output:
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.54.47.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.54.47.png)
+![Captura de pantalla 2024-12-20 a las 12.54.47.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.54.47.png)
 
 ## XML file format
 
@@ -258,7 +258,7 @@ Pandas does not include any methods to read and write XML files. Here, we will t
 
 The **xml.etree.ElementTree** module comes built-in with Python. It provides functionality for parsing and creating XML documents. **ElementTree** represents the XML document as a tree. We can move across the document using nodes which are elements and sub-elements of the XML file.
 
-For more information please read the [xml.etree.ElementTree](../img/https://docs.python.org/3/library/xml.etree.elementtree.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) documentation.
+For more information please read the [xml.etree.ElementTree](https://docs.python.org/3/library/xml.etree.elementtree.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) documentation.
 
 ```python
 import xml.etree.ElementTree as ET
@@ -338,13 +338,13 @@ for node in root:
 datatframe #output:
 ```
 
-![Captura de pantalla 2024-12-20 a las 12.56.57.png](../img/Captura_de_pantalla_2024-12-20_a_las_12.56.57.png)
+![Captura de pantalla 2024-12-20 a las 12.56.57.png](../../img/Captura_de_pantalla_2024-12-20_a_las_12.56.57.png)
 
 ### Reading xml file using pandas.read_xml function
 
 We can also read the downloaded xml file using the read_xml function present in the pandas library which returns a Dataframe object.
 
-For more information read the [pandas.read_xml](../img/https://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.read_xml.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01#pandas-read-xml) documentation.
+For more information read the [pandas.read_xml](https://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.read_xml.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01#pandas-read-xml) documentation.
 
 ```python
 # Herein xpath we mention the set of xml nodes to be considered for migrating  to the dataframe which in this case is details node under employees.
@@ -363,7 +363,7 @@ datatframe.to_csv("employee.csv", index=False)
 
 We can also read and save other file formats, we can use similar functions to **`pd.read_csv()`** and **`df.to_csv()`** for other data formats. The functions are listed in the following table:
 
-![Captura de pantalla 2024-12-20 a las 12.58.37.png](../img/63a9750e-72bb-4cf7-9983-fa22457f3a16.png)
+![Captura de pantalla 2024-12-20 a las 12.58.37.png](../../img/63a9750e-72bb-4cf7-9983-fa22457f3a16.png)
 
 ## Binary file format
 
@@ -435,7 +435,7 @@ print("The first 5 rows of the dataframe")
 df.head(5)
 ```
 
-![Captura de pantalla 2024-12-20 a las 13.04.18.png](../img/Captura_de_pantalla_2024-12-20_a_las_13.04.18.png)
+![Captura de pantalla 2024-12-20 a las 13.04.18.png](../../img/Captura_de_pantalla_2024-12-20_a_las_13.04.18.png)
 
 ```python
 #To view the dimensions of the dataframe:
@@ -455,11 +455,11 @@ df.describe()
 # When this method is applied to a series of strings, it returns a different output
 ```
 
-![Captura de pantalla 2024-12-20 a las 13.08.41.png](../img/Captura_de_pantalla_2024-12-20_a_las_13.08.41.png)
+![Captura de pantalla 2024-12-20 a las 13.08.41.png](../../img/Captura_de_pantalla_2024-12-20_a_las_13.08.41.png)
 
-![Captura de pantalla 2024-12-20 a las 13.08.56.png](../img/Captura_de_pantalla_2024-12-20_a_las_13.08.56.png)
+![Captura de pantalla 2024-12-20 a las 13.08.56.png](../../img/Captura_de_pantalla_2024-12-20_a_las_13.08.56.png)
 
-### **Identify and handle missing values[¶](../img/https://cf-courses-data.static.labs.skills.network/jupyterlite/2.5.5/lab/index.html?mode=learn&env_type=jupyterlite&notebook_url=https%3A%2F%2Fcf-courses-data.static.labs.skills.network%2FIBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork%2Flabs%2Fjupyterlite%2Ffiles%2FModule_5%2FPY0101EN-5.4_WorkingWithDifferentFileTypes-20230719-1689724800.jupyterlite.ipynb&file_path=PY0101EN%2Fjupyterlite%2Ffiles%2FModule+5%2FPY0101EN-5+4_WorkingWithDifferent.ipynb#Identify-and-handle-missing-values)**
+### **Identify and handle missing values**
 
 We use Python's built-in functions to identify these missing values. There are two methods to detect missing data:
 
@@ -475,7 +475,7 @@ missing_data.head(5)
 # "True" standos for missing value, "False" fornot missing value
 ```
 
-![Captura de pantalla 2024-12-20 a las 13.08.20.png](../img/Captura_de_pantalla_2024-12-20_a_las_13.08.20.png)
+![Captura de pantalla 2024-12-20 a las 13.08.20.png](../../img/Captura_de_pantalla_2024-12-20_a_las_13.08.20.png)
 
 ### Count missing values in each column
 
@@ -504,7 +504,7 @@ Numerical variables should have type **'float'** or **'int'**.
 df.dtypes
 ```
 
-![Captura de pantalla 2024-12-20 a las 13.10.31.png](../img/Captura_de_pantalla_2024-12-20_a_las_13.10.31.png)
+![Captura de pantalla 2024-12-20 a las 13.10.31.png](../../img/Captura_de_pantalla_2024-12-20_a_las_13.10.31.png)
 
 ## Visualization
 
@@ -521,4 +521,4 @@ plt.legend()
 plt.show()
 ```
 
-![Captura de pantalla 2024-12-20 a las 13.11.42.png](../img/Captura_de_pantalla_2024-12-20_a_las_13.11.42.png)
+![Captura de pantalla 2024-12-20 a las 13.11.42.png](../../img/Captura_de_pantalla_2024-12-20_a_las_13.11.42.png)

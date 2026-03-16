@@ -1,4 +1,4 @@
-# 5.1 Introducción: Simple APIs
+# 5.1 Introduction: Simple APIs
 
 ## What is an API?
 
@@ -8,7 +8,7 @@ An API lets two pieces of software talk to each other. Just like a function, you
 
 Pandas is actually set of software components, much of which is not even written in Python.
 
-![Captura de pantalla 2024-12-18 a las 14.25.56.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.25.56.png)
+![Captura de pantalla 2024-12-18 a las 14.25.56.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.25.56.png)
 
 When you create a Pandas object with the DataFrame constructor, in API lingo this is an "instance". The data in the dictionary is passed along to the pandas API. You then use the dataframe to communicate with the API.
 
@@ -27,7 +27,7 @@ When you call the method `head` the dataframe communicates with the API displayi
 df.head()
 ```
 
-![Captura de pantalla 2024-12-18 a las 14.27.22.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.27.22.png)
+![Captura de pantalla 2024-12-18 a las 14.27.22.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.27.22.png)
 
 When you call the method `mean`, the API will calculate the mean and return the value.
 
@@ -35,19 +35,19 @@ When you call the method `mean`, the API will calculate the mean and return the 
 df.mean()
 ```
 
-![Captura de pantalla 2024-12-18 a las 14.27.33.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.27.33.png)
+![Captura de pantalla 2024-12-18 a las 14.27.33.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.27.33.png)
 
 ## REST APIs
 
 Rest APIs function by sending a **request** that is communicated via HTTP message. The HTTP message usually contains a JSON file. This contains instructions for what operation we would like the service or **resource** to perform. In a similar manner, API returns a **response**, via an HTTP message, also usually contained within a JSON.
 
-In this lab, we will use the [NBA API](../img/https://pypi.org/project/nba-api/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) to determine how well the Golden State Warriors performed against the Toronto Raptors. We will use the API to determine the number of points the Golden State Warriors won or lost by for each game. So if the value is three, the Golden State Warriors won by three points. Similarly it the Golden State Warriors lost by two points the result will be negative two. The API will handle a lot of the details, such a Endpoints and Authentication.
+In this lab, we will use the [NBA API](https://pypi.org/project/nba-api/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) to determine how well the Golden State Warriors performed against the Toronto Raptors. We will use the API to determine the number of points the Golden State Warriors won or lost by for each game. So if the value is three, the Golden State Warriors won by three points. Similarly it the Golden State Warriors lost by two points the result will be negative two. The API will handle a lot of the details, such a Endpoints and Authentication.
 
 ### Example: NBA API
 
 `!pip install nba_api`
 
-We will use the [NBA API](../img/https://pypi.org/project/nba-api/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) to determine how well the Golden State Warriors performed against the Toronto Raptors. The API will handle a lot of the details, such a Endpoints and Authentication.
+We will use the [NBA API](https://pypi.org/project/nba-api/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) to determine how well the Golden State Warriors performed against the Toronto Raptors. The API will handle a lot of the details, such a Endpoints and Authentication.
 
 It's quite simple to use the nba api to make a request for a specific team. We don't require a JSON, all we require is an id. This information is stored locally in the API. We import the module `teams`.
 
@@ -71,7 +71,7 @@ nba_teams = teams.get_teams()
 nba_teams[0:3] #Output in the side image
 ```
 
-![Captura de pantalla 2024-12-18 a las 14.33.23.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.33.23.png)
+![Captura de pantalla 2024-12-18 a las 14.33.23.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.33.23.png)
 
 To make things easier, we can convert the dictionary to a table. First, we use the function `one dict`, to create a dictionary. We use the common keys for each team as the keys, the value is a list; each element of the list corresponds to the values for each team. We then convert the dictionary to a dataframe, each row contains the information for a different team:
 
@@ -81,7 +81,7 @@ df_teams=pd.DataFrame(dict_nba_team)
 df_teams.head()
 ```
 
-![Captura de pantalla 2024-12-18 a las 14.38.58.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.38.58.png)
+![Captura de pantalla 2024-12-18 a las 14.38.58.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.38.58.png)
 
 Will use the team's nickname to find the unique id, we can see the row that contains the warriors by using the column nickname as follows:
 
@@ -90,7 +90,7 @@ df_warriors=df_teams[df_teams['nickname']=='Warriors']
 df_warriors
 ```
 
-![Captura de pantalla 2024-12-18 a las 14.39.42.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.39.42.png)
+![Captura de pantalla 2024-12-18 a las 14.39.42.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.39.42.png)
 
 We can use the following line of code to access the first column of the DataFrame:
 
@@ -133,7 +133,7 @@ games = pd.read_pickle(file_name)
 games.head()
 ```
 
-![Captura de pantalla 2024-12-18 a las 14.49.23.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.49.23.png)
+![Captura de pantalla 2024-12-18 a las 14.49.23.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.49.23.png)
 
 We can create two dataframes, one for the games that the Warriors faced the raptors at home, and the second for away games.
 
@@ -160,4 +160,4 @@ ax.legend(["away", "home"])
 plt.show()
 ```
 
-![Captura de pantalla 2024-12-18 a las 14.51.16.png](../img/Captura_de_pantalla_2024-12-18_a_las_14.51.16.png)
+![Captura de pantalla 2024-12-18 a las 14.51.16.png](../../img/Captura_de_pantalla_2024-12-18_a_las_14.51.16.png)

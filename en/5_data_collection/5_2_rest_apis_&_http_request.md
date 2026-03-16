@@ -8,7 +8,7 @@ The figure below represents the process. The circle on the left represents the c
 
 The **HTTP** protocol facilitates the exchange of information on the web, including webpages, images, and other resources. In this lab, we will provide an overview of the Requests library for interacting with the `HTTP` protocol.
 
-![Captura de pantalla 2024-12-19 a las 16.24.13.png](../img/Captura_de_pantalla_2024-12-19_a_las_16.24.13.png)
+![Captura de pantalla 2024-12-19 a las 16.24.13.png](../../img/Captura_de_pantalla_2024-12-19_a_las_16.24.13.png)
 
 ### **Uniform Resource Locator: URL**
 
@@ -27,9 +27,9 @@ The process can be divided into the **Request** and **Response** phases. The req
 
 In the start line, we have the `GET` method, which is an **HTTP** method, along with the location of the resource (`/index.html`) and the **HTTP** version. The Request Header provides additional information along with the **HTTP** request.
 
-![Captura de pantalla 2024-12-19 a las 16.26.15.png](../img/Captura_de_pantalla_2024-12-19_a_las_16.26.15.png)
+![Captura de pantalla 2024-12-19 a las 16.26.15.png](../../img/Captura_de_pantalla_2024-12-19_a_las_16.26.15.png)
 
-![Captura de pantalla 2024-12-19 a las 16.27.38.png](../img/fc22f1c1-5ac7-4f78-a3f6-6642c3720b38.png)
+![Captura de pantalla 2024-12-19 a las 16.27.38.png](../../img/fc22f1c1-5ac7-4f78-a3f6-6642c3720b38.png)
 
 When an **HTTP** request is made, an **HTTP** method is sent. This method tells the server what action to perform. The image in the right shows a list of several **HTTP** methods. 
 
@@ -37,13 +37,13 @@ When an **HTTP** request is made, an **HTTP** method is sent. This method tells 
 
 The figure represents the response. The response start line includes the version number (`HTTP/1.0`), a status code (`200`), which indicates success, and a descriptive phrase (`OK`). The response header provides useful information, and the response body contains the requested file, such as an `HTML` document. It should also be noted that some requests include headers.
 
-![Captura de pantalla 2024-12-19 a las 16.28.26.png](../img/Captura_de_pantalla_2024-12-19_a_las_16.28.26.png)
+![Captura de pantalla 2024-12-19 a las 16.28.26.png](../../img/Captura_de_pantalla_2024-12-19_a_las_16.28.26.png)
 
 Some examples of status codes are shown in the table. The prefix indicates the class (highlighted in yellow), while the actual status codes are displayed in white. 
 
-For more detailed descriptions, check out the following [link](../img/https://developer.mozilla.org/en-US/docs/Web/HTTP/Status?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01).
+For more detailed descriptions, check out the following [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01).
 
-![Captura de pantalla 2024-12-19 a las 16.31.17.png](../img/Captura_de_pantalla_2024-12-19_a_las_16.31.17.png)
+![Captura de pantalla 2024-12-19 a las 16.31.17.png](../../img/Captura_de_pantalla_2024-12-19_a_las_16.31.17.png)
 
 ## Requests in Python
 
@@ -88,7 +88,7 @@ r.text[0:100]
 ### Examples:
 
 - **Accessing an image:** 
-An image is a response object that contains the image as a [bytes-like object](../img/https://docs.python.org/3/glossary.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01#term-bytes-like-object). Therefore, it must be saved using a file object. To do this, we first specify the **file path and name**.
+An image is a response object that contains the image as a [bytes-like object](https://docs.python.org/3/glossary.html?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01#term-bytes-like-object). Therefore, it must be saved using a file object. To do this, we first specify the **file path and name**.
     
     ```python
     path=os.path.join(os.getcwd(),'image.png')
@@ -107,7 +107,7 @@ An image is a response object that contains the image as a [bytes-like object](.
     ```
     
 - **Accessing a file:**
-Given the URL: [`https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module 5/data/Example1.txt](../img/https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/data/Example1.txt)`
+Given the URL: [`https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module 5/data/Example1.txt](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/data/Example1.txt)`
 These would be the commands to download the txt file:
     
     ```python
@@ -127,9 +127,9 @@ You can use the **GET** method to modify the results of your query, such as retr
 url_get='http://httpbin.org/get'
 ```
 
-A [query string](../img/https://en.wikipedia.org/wiki/Query_string?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) is a part of a Uniform Resource Locator (URL) that sends additional information to the web server. The query begins with a `?`, followed by a series of parameter-value pairs, as shown in the table below. The first parameter name is `name`, with the value `Joseph`. The second parameter name is `ID`, with the value `123`. Each parameter-value pair is separated by an equals sign (`=`), and the pairs are separated by an ampersand (`&`).
+A [query string](https://en.wikipedia.org/wiki/Query_string?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01) is a part of a Uniform Resource Locator (URL) that sends additional information to the web server. The query begins with a `?`, followed by a series of parameter-value pairs, as shown in the table below. The first parameter name is `name`, with the value `Joseph`. The second parameter name is `ID`, with the value `123`. Each parameter-value pair is separated by an equals sign (`=`), and the pairs are separated by an ampersand (`&`).
 
-![Captura de pantalla 2024-12-19 a las 16.56.08.png](../img/Captura_de_pantalla_2024-12-19_a_las_16.56.08.png)
+![Captura de pantalla 2024-12-19 a las 16.56.08.png](../../img/Captura_de_pantalla_2024-12-19_a_las_16.56.08.png)
 
 ```python
 # To create a Query string, add a dictionary. 

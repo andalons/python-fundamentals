@@ -2,7 +2,7 @@
 
 - A dictionary consists of **keys** and **values**. It is helpful to compare a dictionary to a list:
     
-    ![Captura de pantalla 2024-12-12 a las 7.42.13.png](../img/Captura_de_pantalla_2024-12-12_a_las_7.42.13.png)
+    ![Captura de pantalla 2024-12-12 a las 7.42.13.png](../../img/Captura_de_pantalla_2024-12-12_a_las_7.42.13.png)
     
 - Instead of being indexed numerically like a list, dictionaries have keys. These keys are the keys that are used to access values within a dictionary.
 - Each key is separated from its value by a colon "`:`". Commas separate the items, and the whole dictionary is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this `{}`.
