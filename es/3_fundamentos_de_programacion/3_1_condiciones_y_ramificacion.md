@@ -110,7 +110,7 @@ A veces quieres verificar más de una condición a la vez. Por ejemplo, podrías
 
 album_year = 1980
 
-if(album_year > 1979) **and** (album_year < 1990):
+if(album_year > 1979) and (album_year < 1990):
     print ("Album year was in between 1980 and 1989")
     
 print("")
@@ -127,7 +127,7 @@ print("Do Stuff..")
 
 album_year = 1990
 
-if(album_year < 1980) **or** (album_year > 1989):
+if(album_year < 1980) or (album_year > 1989):
     print ("Album was not made in the 1980's")
 else:
     print("The Album was made in the 1980's ")
